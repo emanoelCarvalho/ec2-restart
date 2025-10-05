@@ -59,7 +59,7 @@ Atualmente, o acesso à aplicação é protegido pelo uso de uma **API Key** def
 
 ```bash
 npm install
-node server.js
+node app.js
 ```
 
 Acesse em: [http://localhost:3000](http://localhost:3000)
