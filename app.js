@@ -5,8 +5,18 @@ const helmet = require('helmet');
 const ec2Routes = require('./src/routes/ec2Routes');
 
 const app = express();
-app.use(helmet());
-app.use(express.json());
+app.use(helmet({ contentSecurityPolicy: false }));
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      imgSrc: ["'self'", "data:"],
+      scriptSrc: ["'self'"],
+      styleSrc: ["'self'"],
+      connectSrc: ["'self'"],
+    },
+  })
+); app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
