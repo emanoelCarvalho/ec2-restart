@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>EC2 - Restart</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Reiniciar instância EC2</h1>
+        <p>Insira o ID da instância que deseja reiniciar. O sistema apenas aceitará IDs permitidos pela configuração do
+            servidor.</p>
+        <label for="iid">Instance ID</label>
+        <input id="iid" type="text" placeholder="i-0123456789abcdef0" />
+        <label for="api">API Key (Bearer)</label>
+        <input id="api" type="text" placeholder="token secreto" />
+        <button id="btn">Reiniciar agora</button>
+        <div class="small" id="msg"></div>
+        <footer>
+            Feito para o suporte por
+            <a href="https://www.linkedin.com/in/emanoelCarvalho" target="_blank" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/emanoelcarvalho" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://dev.to/emanoelcarvalho" target="_blank" title="Dev.to">
+                <i class="fa-brands fa-dev"></i>
+            </a>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
