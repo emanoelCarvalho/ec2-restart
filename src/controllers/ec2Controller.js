@@ -5,7 +5,7 @@ const ALLOWED_INSTANCES = (process.env.ALLOWED_INSTANCES || '')
   .map(s => s.trim())
   .filter(Boolean);
 
-async function rebootHandler(req, res) {
+export async function rebootHandler(req, res) {
   try {
     const { instanceIds } = req.body;
     if (!Array.isArray(instanceIds) || instanceIds.length === 0) {
@@ -24,5 +24,4 @@ async function rebootHandler(req, res) {
   }
 }
 
-module.exports = { rebootHandler };
 

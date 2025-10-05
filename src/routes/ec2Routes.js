@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { rebootHandler } = require('../controllers/ec2Controller');
 
-function requireApiKey(req, res, next) {
+export function requireApiKey(req, res, next) {
   const auth = req.header('authorization') || '';
   if (!auth.startsWith('Bearer ')) return res.status(401).json({ error: 'Missing Bearer token' });
   const token = auth.slice(7);
@@ -12,4 +12,3 @@ function requireApiKey(req, res, next) {
 
 router.post('/reboot', requireApiKey, rebootHandler);
 
-module.exports = router;
