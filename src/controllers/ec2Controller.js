@@ -1,4 +1,4 @@
-const { rebootInstances } = require('../services/ec2Service');
+import { rebootInstances } from '../services/ec2Service.js';
 
 const ALLOWED_INSTANCES = (process.env.ALLOWED_INSTANCES || '')
   .split(',')
@@ -23,5 +23,3 @@ export async function rebootHandler(req, res) {
     return res.status(500).json({ error: 'Failed to reboot', details: err.message || err.toString() });
   }
 }
-
-

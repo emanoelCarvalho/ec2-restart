@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import { rebootHandler } from '../controllers/ec2Controller.js';
+
 const router = express.Router();
-const { rebootHandler } = require('../controllers/ec2Controller');
 
 export function requireApiKey(req, res, next) {
   const auth = req.header('authorization') || '';
@@ -12,3 +13,4 @@ export function requireApiKey(req, res, next) {
 
 router.post('/reboot', requireApiKey, rebootHandler);
 
+export default router;
