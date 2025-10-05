@@ -1,0 +1,27 @@
+{
+  "name": "ec2-restart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanoelCarvalho/ec2-restart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/emanoelCarvalho/ec2-restart/issues"
+  },
+  "homepage": "https://github.com/emanoelCarvalho/ec2-restart#readme",
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.901.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  }
+}
