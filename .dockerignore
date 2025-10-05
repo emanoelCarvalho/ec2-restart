@@ -1,0 +1,23 @@
+node_modules
+npm-debug.log
+yarn-error.log
+
+logs
+*.log
+
+.env.local
+.env.development
+.env.test
+.env
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Outros arquivos que não precisam ir para a imagem
+.vscode
+*.md

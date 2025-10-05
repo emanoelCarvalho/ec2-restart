@@ -1,0 +1,43 @@
+# Ambientes virtuais
+venv/
+.env
+.env*/  
+
+# Node.js
+node_modules/
+
+# Credenciais / configs sensíveis
+*.pem
+*.key
+*.crt
+*.p12
+*.env.local
+creds.json
+credentials.json
+
+# Arquivos temporários / cache
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Compilação / build
+dist/
+build/
+*.egg-info/
+
+# IDEs / editores
+.vscode/
+.idea/
+*.iml
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
